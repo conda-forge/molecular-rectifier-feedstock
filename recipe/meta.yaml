@@ -1,5 +1,5 @@
 {% set name = "molecular-rectifier" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/molecular_rectifier-{{ version }}.tar.gz
-  sha256: 2401494527badf3bb7348f22227f99bb44c282baac13e20adeaa11aa4fc65bd6
+  sha256: 76ac7cdbee8ade1e7acb89b373ba55ccc9b8b07bb8e1fadc5239f59ef77d941f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
